@@ -3,15 +3,15 @@
 class UnisonFsmonitor < Formula
   desc "unison-fsmonitor for macOS"
   homepage "https://github.com/autozimu/unison-fsmonitor"
-  version "0.3.4"
+  version "0.3.8"
 
   if OS.linux?
     raise "formula for unison already provides unison-fsmonitor!"
   elsif OS.mac?
     if Hardware::CPU.intel?
-      url "https://github.com/autozimu/unison-fsmonitor/releases/download/v0.3.4/unison-fsmonitor-macos-amd64.tar.gz"
+      url "https://github.com/autozimu/unison-fsmonitor/releases/download/v0.3.8/unison-fsmonitor-macos-amd64.tar.gz"
     elsif Hardware::CPU.arm?
-      url "https://github.com/autozimu/unison-fsmonitor/releases/download/v0.3.4/unison-fsmonitor-macos-aarch64.tar.gz"
+      url "https://github.com/autozimu/unison-fsmonitor/releases/download/v0.3.8/unison-fsmonitor-macos-aarch64.tar.gz"
     else
       raise "Unsupported macOS arch!"
     end
